@@ -58,7 +58,8 @@ const ServiceCard = () => {
                   {/* {service.p} */}
                   <br />
                   Our capabilities
-                  {service.capability.map((point, index) => (
+                  {
+                    service.capability.map((point, index) => (
                     <li key={index}>{point}</li>
                   ))}
                 </ul>
@@ -68,7 +69,7 @@ const ServiceCard = () => {
                     Explore our Case studies
                   </Button>
                   <Button className="underline underline-offset-8 text-black shadow-none bg-transparent hover:bg-transparent">
-                    Let's work with you
+                    Let&#39;s work with you
                   </Button>
                 </div>
               </div>
