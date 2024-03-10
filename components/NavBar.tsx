@@ -23,7 +23,7 @@ const NavBar = () => {
     <nav className="">
       <div className="flex items-center justify-between max-w-screen-xxl lg:px-[90px] px-6 py-5 w-full mx-auto bg-white lg:relative border-b">
         {/* logo */}
-        <div className="lg:w-fit w-full z-30 flex items-center justify-between border-b lg:border-none pb-5 lg:pb-0">
+        <div className="lg:w-fit w-full z-30 flex items-center justify-between lg:pb-0">
           <Link href={"/"}>
             <div className="font-black text-2xl">QMSL</div>
           </Link>

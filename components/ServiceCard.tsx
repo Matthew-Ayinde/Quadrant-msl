@@ -5,8 +5,8 @@ import { Button } from "./ui/button";
 const ServiceCard = () => {
   return (
     <>
-      <div className="flex flex-col gap-10 lg:gap-20 py-4 lg:py-20">
-        <div className=" flex flex-col w-full justify-center items-center gap-2 lg:gap-6 ">
+      <div className="lg:py-20 max-w-screen-xxl lg:px-[90px] px-6 py-5 w-full mx-auto">
+        <div className="flex flex-col w-full justify-center items-center gap-2 lg:gap-6 mb-2">
           <Button className="bg-transparent shadow-none text-black border border-black hover:bg-white flex">
             Services
           </Button>
@@ -24,23 +24,25 @@ const ServiceCard = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-10">
+        <div className="">
           {Contents.map((service, index) => (
             <div
               key={index}
-              className={`w-full flex items-center flex-col lg:flex-row lg:justify-between gap-4 lg:gap-10 px-6 lg:px-12 ${
-                index % 2 === 0 ? "" : "lg:flex-row-reverse bg-[#F5F5F5]"}`}
+              className={`w-full flex items-center flex-col lg:flex-row lg:justify-between gap-4 lg:gap-10 py-32 ${
+                index % 2 === 0 ? "" : "lg:flex-row-reverse bg-[#F5F5F5]"
+              }`}
             >
               <div className="w-full lg:w-1/2">
-                <div className="w-full lg:w-full h-[400px] lg:h-[720px] relative">
+                <div className="w-full h-[400px] lg:h-[720px] relative rounded-2xl">
                   <Image
                     src={service.image}
                     alt={service.title}
                     fill
-                    className="object-contain w-auto absolute"
+                    className="object-cover w-auto absolute rounded-2xl"
                   />
                 </div>
               </div>
+
               <div
                 className="w-full lg:w-1/2 
                text-[10px] flex flex-col lg:gap-4"
@@ -58,8 +60,7 @@ const ServiceCard = () => {
                   {/* {service.p} */}
                   <br />
                   Our capabilities
-                  {
-                    service.capability.map((point, index) => (
+                  {service.capability.map((point, index) => (
                     <li key={index}>{point}</li>
                   ))}
                 </ul>
