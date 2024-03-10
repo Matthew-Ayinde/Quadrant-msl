@@ -1,12 +1,11 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from './ui/button';
-import CloseIcon from './CloseIcon';
-import OpenIcon from './OpenIcon';
-import NavLinks from './NavLinks';
+import React, { useState } from "react";
+import Link from "next/link";
+import { Button } from "./ui/button";
+import CloseIcon from "./CloseIcon";
+import OpenIcon from "./OpenIcon";
+import NavLinks from "./NavLinks";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -14,9 +13,9 @@ const NavBar = () => {
   const toggleMobileMenu = () => {
     setOpen(!open);
     if (!open) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = "auto";
     }
   };
 
@@ -25,7 +24,7 @@ const NavBar = () => {
       <div className="flex items-center justify-between max-w-screen-xxl lg:px-[90px] px-6 py-5 w-full mx-auto bg-white lg:relative border-b">
         {/* logo */}
         <div className="lg:w-fit w-full z-30 flex items-center justify-between border-b lg:border-none pb-5 lg:pb-0">
-          <Link href={'/'}>
+          <Link href={"/"}>
             <div className="font-black text-2xl">QMSL</div>
           </Link>
 
@@ -50,11 +49,11 @@ const NavBar = () => {
         {/* mobile view */}
         <ul
           className={`lg:hidden uppercase absolute w-full h-full bottom-0 bg-white z-10 py-32 duration-500 ease-in-out transition-all ${
-            open ? 'left-0' : 'left-[-100%]'
+            open ? "left-0" : "left-[-100%]"
           }`}
         >
           <div className="space-y-8 px-6">
-            <NavLinks/>
+            <NavLinks />
 
             <div className="w-full px-6">
               <Button
