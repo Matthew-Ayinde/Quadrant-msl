@@ -57,6 +57,8 @@ const config = {
         },
         "custom-offwhite": "#E0E0E0",
         "custom-white": "#F2F2F2",
+        "custom-black": "#121212",
+        "custom-lightgray": "#4F4F4F",
       },
       borderRadius: {
         lg: "var(--radius)",
