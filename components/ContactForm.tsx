@@ -55,8 +55,8 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="bg-[#F7F7F7] p-10">
-      <div className="px-[68px] py-[71px] bg-white rounded-md">
+    <section className="bg-[#F7F7F7] lg:p-10 p-4">
+      <div className="lg:px-[68px] px-5 py-[71px] bg-white rounded-md">
         <Formik
           initialValues={initialValues}
           onSubmit={handleSubmit}
