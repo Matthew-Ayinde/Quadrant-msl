@@ -9,16 +9,17 @@ import instagram from "../public/logo/instagram.png";
 
 const Footer = () => {
   return (
-    <>
-      <div className="bg-black text-custom-white py-6 flex items-center justify-between max-w-screen-xxl lg:px-[90px] px-6 w-full mx-auto border-b">
+    <div className="bg-black">
+      <div className="bg-black text-custom-white flex items-center justify-between max-w-screen-xxl lg:px-[90px] px-6 w-full mx-auto border-b">
         <div className="mx-auto my-10 w-full">
-          <div className="flex flex-col lg:flex-row">
-            <div className="w-full flex-1 gap-10">
-              <div className="mb-4">
-                <h2 className="text-lg font-semibold mb-2">
-                  What Customers are saying about Us
+          <div className="flex flex-col lg:flex-row lg:mb-32 mb-20 lg:mt-14 mt-10 gap-y-[60px]">
+            <div className="w-full flex-1">
+              <div className="">
+                <h2 className="lg:text-[32px] font-bold text-2xl">
+                  What Customers are saying <br /> about Us
                 </h2>
-                <div className="flex my-5">
+
+                <div className="flex lg:mt-16 mt-8 items-center gap-8">
                   <span className="mr-2">
                     <Link href={""}>
                       <Image alt="twitter logo" src={twitter} width={40} />
@@ -38,10 +39,10 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row lg:justify-between gap-x-52 gap-y-10 w-full max-w-96">
-              <div className="w-full">
-                <div className="space-y-2">
-                  <div className="pb-3">
+            <div className="flex flex-col lg:flex-row lg:justify-between gap-y-[72px] w-full lg:w-1/3 lg:max-w-96">
+              <div className="">
+                <div className="space-y-10">
+                  <div className="">
                     <Link
                       href="#"
                       className="block text-gray-300 hover:text-white text-sm"
@@ -49,7 +50,7 @@ const Footer = () => {
                       Case Studies
                     </Link>
                   </div>
-                  <div className="pb-3">
+                  <div className="">
                     <a
                       href="#"
                       className="block text-gray-300 hover:text-white text-sm"
@@ -57,7 +58,7 @@ const Footer = () => {
                       Solutions
                     </a>
                   </div>
-                  <div className="pb-3">
+                  <div className="">
                     <a
                       href="#"
                       className="block text-gray-300 hover:text-white text-sm"
@@ -65,7 +66,7 @@ const Footer = () => {
                       About Us
                     </a>
                   </div>
-                  <div className="pb-3">
+                  <div className="">
                     <a
                       href="#"
                       className="block text-gray-300 hover:text-white text-sm"
@@ -73,7 +74,7 @@ const Footer = () => {
                       What's New
                     </a>
                   </div>
-                  <div className="pb-3">
+                  <div className="">
                     <a
                       href="#"
                       className="block text-gray-300 hover:text-white text-sm"
@@ -81,7 +82,7 @@ const Footer = () => {
                       Q-intel
                     </a>
                   </div>
-                  <div className="pb-3">
+                  <div className="">
                     <a
                       href="#"
                       className="block text-gray-300 hover:text-white text-sm"
@@ -92,9 +93,9 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="w-full">
-                <div className="space-y-2">
-                  <div className="pb-3">
+              <div className="">
+                <div className="space-y-10">
+                  <div className="">
                     <Link
                       href="#"
                       className="block text-gray-300 hover:text-white text-sm"
@@ -102,7 +103,7 @@ const Footer = () => {
                       Case Studies
                     </Link>
                   </div>
-                  <div className="pb-3">
+                  <div className="">
                     <Link
                       href="#"
                       className="block text-gray-300 hover:text-white text-sm"
@@ -110,7 +111,7 @@ const Footer = () => {
                       Solutions
                     </Link>
                   </div>
-                  <div className="pb-3">
+                  <div className="">
                     <Link
                       href="#"
                       className="block text-gray-300 hover:text-white text-sm"
@@ -118,7 +119,7 @@ const Footer = () => {
                       About Us
                     </Link>
                   </div>
-                  <div className="pb-3">
+                  <div className="">
                     <Link
                       href="#"
                       className="block text-gray-300 hover:text-white text-sm"
@@ -126,7 +127,7 @@ const Footer = () => {
                       What's New
                     </Link>
                   </div>
-                  <div className="pb-3">
+                  <div className="">
                     <Link
                       href="#"
                       className="block text-gray-300 hover:text-white text-sm"
@@ -134,7 +135,7 @@ const Footer = () => {
                       Q-intel
                     </Link>
                   </div>
-                  <div className="pb-3">
+                  <div className="">
                     <Link
                       href="#"
                       className="block text-gray-300 hover:text-white text-sm"
@@ -147,10 +148,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <hr className="mt-20 mb-2" />
-
-          <div className="flex lg:justify-between items-center mt-5 gap-5 flex-col lg:flex-row">
-            <p className="font-black text-2xl">QMSL</p>
+          <div className="flex lg:justify-between lg:items-center gap-8 flex-col lg:flex-row pt-6 lg:px-2 border-t border-[#828282] mb-12">
+            <p className="font-black text-[32px] text-custom-white">QMSL</p>
 
             <p className="text-sm text-custom-offwhite">
               Copyright@2024QMSL.
@@ -159,7 +158,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
