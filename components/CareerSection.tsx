@@ -15,8 +15,8 @@ const CareerSection = () => {
   return (
     <>
     <div className="max-w-screen-xxl  pt-[157px] pb-[232px]  lg:py-20  lg:px-[90px] px-6 py-5 w-full mx-auto">
-        <Card className="flex bg-custom-black justify-between text-white lg:max-h-[680px]">
-            <div className="py-[62px] px-[64px] flex items-center ">
+        <Card className="lg:flex space-y-10 bg-custom-black  text-white lg:max-h-[680px] py-[62px] lg:px-[64px]  items-center  lg:justify-between">
+            
             <CardContent className="lg:max-w-[467px] flex flex-col space-y-8 ">
              
                     <h1 className="font-black text-[56px]">Careers</h1>
@@ -35,10 +35,11 @@ const CareerSection = () => {
                 alt=""
                 width={395}
                 height={356}
+                className=""
                 />
             </CardContent>
 
-            </div>
+           
         </Card>
 
         <div className="flex flex-col items-center pt-[197px] space-y-[60px]">
