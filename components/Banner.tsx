@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div className="w-full bg-black px-6 lg:px-20 py-32">
-      <div className="w-full">
+    <div className="w-full h-screen relative bg-red-500">
+      {/* <div className="w-full">
         <h1 className="text-center text-3xl lg:text-[56px] font-bold text-white">
           Impact is at our core
         </h1>
@@ -18,7 +18,28 @@ const Banner = () => {
             className="object-contain absolute w-auto"
           />
         </div>
-      </div>
+      </div> */}
+
+      <video
+        className="absolute object-cover w-full"
+        preload="auto"
+        loop
+        muted
+        autoPlay
+        // controls
+        controlsList="nofullscreen nodownload noremoteplayback noplaybackrate"
+        disablePictureInPicture
+        disableRemotePlayback
+        playsInline
+      >
+        <source src="/videos/qmsl-video.mp4" type="video/mp4" />
+        <Image
+          src="/banner.svg"
+          alt=""
+          fill
+          className="absolute object-cover w-auto"
+        />
+      </video>
     </div>
   );
 };
