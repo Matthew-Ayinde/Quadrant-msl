@@ -22,7 +22,7 @@ const NavBar = () => {
 
   return (
     <nav className="">
-      <div className="flex items-center justify-between max-w-screen-xxl lg:px-[90px] px-6 py-5 w-full mx-auto bg-white lg:relative border-b">
+      <div className="flex items-center justify-between max-w-screen-xxl lg:px-[90px] px-6 py-5 w-full mx-auto bg-white lg:relative">
         {/* logo */}
         <div className="lg:w-fit w-full z-30 flex items-center justify-between lg:pb-0">
           {/* <Link href={"/"}>
@@ -31,12 +31,13 @@ const NavBar = () => {
           <Link
             href={"/"}
             className="h-[39px] w-[150px] flex justify-center items-center relative"
+            onClick={() => {
+              setOpen(false);
+            }}
           >
             <Image
               src={"/logo.png"}
               alt={""}
-              // height={39}
-              // width={190}
               className="absolute object-contain"
               fill
             />
@@ -48,12 +49,12 @@ const NavBar = () => {
         </div>
 
         {/* large screen links */}
-        <div className="lg:flex hidden items-center justify-between gap-[66px]">
-          <NavLinks />
+        <div className="lg:flex hidden items-center justify-center gap-10 flex-1">
+          <NavLinks setOpen={setOpen} />
         </div>
 
         <Button
-          className="bg-white px-12 py-[14px] rounded text-black hidden lg:flex lg:items-center lg:justify-center border-solid border-2 border-black hover:bg-inherit"
+          className="bg-white px-12 py-4 rounded-[8px] text-black hidden lg:flex lg:items-center lg:justify-center border-solid border-[1.2px] border-black hover:bg-inherit"
           asChild
         >
           <Link href="/contact">Get in Touch</Link>
@@ -65,12 +66,12 @@ const NavBar = () => {
             open ? "left-0" : "left-[-100%]"
           }`}
         >
-          <div className="space-y-8 px-6">
-            <NavLinks />
+          <div className="space-y-12 px-6">
+            <NavLinks setOpen={setOpen} />
 
-            <div className="w-full px-6">
+            <div className="w-full">
               <Button
-                className="px-12 py-[14px] rounded text-black bg-white lg:hidden flex items-center justify-center mt-14 border-solid border-2 border-black hover:bg-inherit"
+                className="px-12 py-[17px] rounded-[8px] text-black bg-white lg:hidden flex items-center justify-center mt-16 border-solid border border-black hover:bg-inherit"
                 asChild
               >
                 <Link href="/contact">Get in touch</Link>

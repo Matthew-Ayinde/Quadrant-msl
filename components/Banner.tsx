@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div className="w-full h-screen relative bg-red-500">
+    <div className="w-full lg:h-screen h-[60vh] relative bg-black">
       {/* <div className="w-full">
         <h1 className="text-center text-3xl lg:text-[56px] font-bold text-white">
           Impact is at our core
@@ -21,7 +21,7 @@ const Banner = () => {
       </div> */}
 
       <video
-        className="absolute object-cover w-full"
+        className="absolute object-cover w-full h-full"
         preload="auto"
         loop
         muted
