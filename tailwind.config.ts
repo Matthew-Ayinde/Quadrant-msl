@@ -57,6 +57,8 @@ const config = {
         },
         "custom-offwhite": "#E0E0E0",
         "custom-white": "#F2F2F2",
+        "custom-black": "#121212",
+        "custom-lightgray": "#4F4F4F",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -76,6 +78,13 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      spacing: {
+        "30xl": "60px",
+        "32xl": "68px",
+        "40xl": "120px",
+        "10xl": "108px",
+        "11xl": "110px",
       },
     },
   },

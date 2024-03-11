@@ -42,8 +42,7 @@ const NavBar = () => {
           className="bg-white px-12 py-[14px] rounded text-black hidden lg:flex lg:items-center lg:justify-center border-solid border-2 border-black hover:bg-inherit"
           asChild
         >
-          <Link href="/subscribe">Get in Touch</Link>
-          {/* Subscribe */}
+          <Link href="/contact">Get in Touch</Link>
         </Button>
 
         {/* mobile view */}
@@ -60,7 +59,7 @@ const NavBar = () => {
                 className="px-12 py-[14px] rounded text-black bg-white lg:hidden flex items-center justify-center mt-14 border-solid border-2 border-black hover:bg-inherit"
                 asChild
               >
-                <Link href="/get-in-touch">Get in touch</Link>
+                <Link href="/contact">Get in touch</Link>
               </Button>
             </div>
           </div>
