@@ -6,6 +6,7 @@ import { Button } from "./ui/button";
 import CloseIcon from "./CloseIcon";
 import OpenIcon from "./OpenIcon";
 import NavLinks from "./NavLinks";
+import Image from "next/image";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -24,8 +25,21 @@ const NavBar = () => {
       <div className="flex items-center justify-between max-w-screen-xxl lg:px-[90px] px-6 py-5 w-full mx-auto bg-white lg:relative border-b">
         {/* logo */}
         <div className="lg:w-fit w-full z-30 flex items-center justify-between lg:pb-0">
-          <Link href={"/"}>
+          {/* <Link href={"/"}>
             <div className="font-black text-2xl">QMSL</div>
+          </Link> */}
+          <Link
+            href={"/"}
+            className="h-[39px] w-[150px] flex justify-center items-center relative"
+          >
+            <Image
+              src={"/logo.png"}
+              alt={""}
+              // height={39}
+              // width={190}
+              className="absolute object-contain"
+              fill
+            />
           </Link>
 
           <div onClick={toggleMobileMenu} className="lg:hidden cursor-pointer">
