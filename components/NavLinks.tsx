@@ -32,7 +32,7 @@ const NavLinks = ({ setOpen }: Props) => {
             <div className="group">
               <Link
                 href={link.url}
-                className={`capitalize text-custom-black cursor-pointer lg:px-[1px] px-1 border block hover:font-medium hover:underline hover:underline-offset-4 transition-all duration-500 ease-in-out delay-300 ${
+                className={`capitalize text-custom-black cursor-pointer lg:px-[1px] px-1 block hover:font-medium hover:underline hover:underline-offset-4 transition-all duration-500 ease-in-out delay-300 ${
                   isActive || heading === link.name
                     ? "font-medium underline underline-offset-2"
                     : ""
