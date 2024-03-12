@@ -21,7 +21,7 @@ const CareerSection = () => {
              
                     <h1 className="font-black text-[56px]">Careers</h1>
                     <p className="text-lg font-normal leading-[25.2px] text-custom-offwhite">
-                        If solving these problems excites you, we're growing quickly
+                        If solving these problems excites you, we&apos;re growing quickly
                         and looking for kind, ambitious people to join our team.
                     </p>
 
@@ -46,7 +46,7 @@ const CareerSection = () => {
             <div className="flex flex-col items-center ">
                 <Button className="border-solid bg-transparent border-black border-2  text-black hover:bg-transparent px-10 py-[12.5px] w-[127px] h-[44px]">Insights</Button>
                 <h1 className="font-bold text-2xl lg:text-4xl text-custom-header pt-5 text-center">The world is constantly evolving and so are we</h1>
-                <p className="text-lg font-normal pt-2">Find out what we've been up to</p>
+                <p className="text-lg font-normal pt-2">Find out what we&apos;ve been up to</p>
             </div>
             <div className=" grid grid-cols-1 lg:grid-cols-3 lg:gap-x-10 gap-y-10 ">
                 {cardContent.map((content, index) => (
