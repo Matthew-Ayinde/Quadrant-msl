@@ -21,7 +21,7 @@ const CareerSection = () => {
              
                     <h1 className="font-black text-[56px]">Careers</h1>
                     <p className="text-lg font-normal leading-[25.2px] text-custom-offwhite">
-                        If solving these problems excites you, we’re growing quickly
+                        If solving these problems excites you, we're growing quickly
                         and looking for kind, ambitious people to join our team.
                     </p>
 
