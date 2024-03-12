@@ -14,7 +14,7 @@ import {
 const CareerSection = () => {
   return (
     <>
-    <div className="max-w-screen-xxl  pt-[157px] pb-[232px]  lg:py-20  lg:px-[90px] px-6 py-5 w-full mx-auto">
+    <div className="max-w-screen-xxl  pt-[157px] pb-[232px]  lg:py-20  lg:px-20 px-6 py-5 w-full mx-auto">
         <Card className="lg:flex space-y-10 bg-custom-black  text-white lg:max-h-[680px] py-[62px] lg:px-[64px]  items-center  lg:justify-between">
             
             <CardContent className="lg:max-w-[467px] flex flex-col space-y-8 ">
