@@ -51,7 +51,12 @@ const HumansSection = () => {
                   </p>
 
                   <div className="flex gap-3 items-center justify-center mt-2">
-                    <Image src={"/twitterBlack.svg"} width={24} height={24} alt="" />
+                    <Image
+                      src={"/twitterBlack.svg"}
+                      width={24}
+                      height={24}
+                      alt=""
+                    />
                     <Image
                       src={"/Linkedin.svg"}
                       width={24}
