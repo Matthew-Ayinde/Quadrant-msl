@@ -6,7 +6,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 const HumansSection = () => {
   return (
     <div className="w-full bg-custom-lightergray  max-w-screen-xxl lg:py-20 lg:px-20 px-6 py-5 mx-auto">
-      <div className="flex flex-col justify-center items-center pt-[160px] space-y-[88px] pb-[200px]">
+      <div className="flex flex-col justify-center items-center pt-[160px] space-y-[88px] pb-[200px] ">
         <div className="text-center w-[855px] flex flex-col space-y-6 items-center">
           <Button className="border-solid  bg-white border-custom-black border text-custom-black hover:bg-transparent px-10 py-[12.5px] w-[113px] h-[44px] shadow-none text-sm">
             Team
@@ -51,7 +51,7 @@ const HumansSection = () => {
                   </p>
 
                   <div className="flex gap-3 items-center justify-center mt-2">
-                    <Image src={"/Twitter.svg"} width={24} height={24} alt="" />
+                    <Image src={"/twitterBlack.svg"} width={24} height={24} alt="" />
                     <Image
                       src={"/Linkedin.svg"}
                       width={24}
