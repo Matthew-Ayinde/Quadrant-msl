@@ -5,7 +5,7 @@ import React from "react";
 const Page = () => {
   return (
     <section className="max-w-screen-xxl w-full mx-auto">
-      <div className="bg-custom-black lg:px-[90px] px-6 lg:py-[110px] py-20 flex flex-col lg:flex-row lg:gap-32 gap-20 justify-between">
+      <div className="bg-custom-black lg:px-20 px-6 lg:py-[110px] py-20 flex flex-col lg:flex-row lg:gap-32 gap-20 justify-between">
         <div className="py-11 lg:w-2/3 w-full">
           <div className="text-custom-white">
             <h2 className="text-56xl leading-12 font-bold">

@@ -6,7 +6,7 @@ const ServiceCard = () => {
   return (
     <>
       <div className="py-20 lg:py-40">
-        <div className="max-w-screen-xxl lg:px-[90px] px-6 w-full mx-auto">
+        <div className="max-w-screen-xxl lg:px-20 px-6 w-full mx-auto">
           <div className="flex flex-col w-full justify-center items-center gap-6 mb-2">
             <Button className="bg-transparent shadow-none text-black border border-black hover:bg-white flex">
               Services
@@ -30,7 +30,7 @@ const ServiceCard = () => {
           {Contents.map((service, index) => (
             <div
               key={index}
-              className={`lg:px-[90px] px-6 ${
+              className={`lg:px-20 px-6 ${
                 index % 2 === 0 ? "" : "bg-[#F5F5F5]"
               }`}
             >

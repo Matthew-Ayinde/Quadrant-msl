@@ -59,6 +59,10 @@ const config = {
         "custom-white": "#F2F2F2",
         "custom-black": "#121212",
         "custom-lightgray": "#4F4F4F",
+        "custom-lightergray": "#F5F5F5",
+        "custom-header": "#011B33",
+        "custom-paragraph": "#828282",
+        "custom-borderBottom": "#BDBDBD"
       },
       borderRadius: {
         lg: "var(--radius)",
