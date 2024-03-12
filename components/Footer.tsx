@@ -1,11 +1,7 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 
 import Image from "next/image";
 import Link from "next/link";
-import facebook from "../public/logo/facebook.png";
-import twitter from "../public/logo/twitter.png";
-import instagram from "../public/logo/instagram.png";
 
 const Footer = () => {
   return (
@@ -22,17 +18,32 @@ const Footer = () => {
                 <div className="flex lg:mt-16 mt-8 items-center gap-8">
                   <span className="mr-2">
                     <Link href={""}>
-                      <Image alt="twitter logo" src={twitter} width={40} />
+                      <Image
+                        alt="twitter logo"
+                        src={"/twitter.svg"}
+                        width={48}
+                        height={48}
+                      />
                     </Link>
                   </span>
                   <span className="mr-2">
                     <Link href={""}>
-                      <Image alt="facebook logo" src={facebook} width={40} />
+                      <Image
+                        alt="facebook logo"
+                        src={"/facebook.svg"}
+                        width={48}
+                        height={48}
+                      />
                     </Link>
                   </span>
                   <span className="mr-2">
                     <Link href={""}>
-                      <Image alt="instagram logo" src={instagram} width={40} />
+                      <Image
+                        alt="instagram logo"
+                        src={"/instagram.svg"}
+                        width={48}
+                        height={48}
+                      />
                     </Link>
                   </span>
                 </div>

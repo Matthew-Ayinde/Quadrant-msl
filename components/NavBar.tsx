@@ -22,7 +22,7 @@ const NavBar = () => {
 
   return (
     <nav className="">
-      <div className="flex items-center justify-between max-w-screen-xxl lg:px-[90px] px-6 py-5 w-full mx-auto bg-white lg:relative">
+      <div className="flex items-center justify-between max-w-screen-xxl lg:px-20 px-6 py-5 w-full mx-auto bg-white lg:relative">
         {/* logo */}
         <div className="lg:w-fit w-full z-30 flex items-center justify-between lg:pb-0">
           {/* <Link href={"/"}>
@@ -49,15 +49,17 @@ const NavBar = () => {
         </div>
 
         {/* large screen links */}
-        <div className="lg:flex hidden items-center justify-center gap-10 flex-1">
+        <div className="lg:flex hidden items-center gap-10 flex-1 ml-10">
           <NavLinks setOpen={setOpen} />
         </div>
 
         <Button
-          className="bg-white px-12 py-4 rounded-[8px] text-black hidden lg:flex lg:items-center lg:justify-center border-solid border-[1.2px] border-black hover:bg-inherit"
+          className="bg-white px-12 py-4 rounded-[8px] text-custom-black hidden lg:flex items-center justify-center border-solid border border-custom-black hover:bg-inherit shadow-none"
           asChild
         >
-          <Link href="/contact">Get in Touch</Link>
+          <Link href="/contact" className="text-sm">
+            Get in Touch
+          </Link>
         </Button>
 
         {/* mobile view */}
@@ -71,7 +73,7 @@ const NavBar = () => {
 
             <div className="w-full">
               <Button
-                className="px-12 py-[17px] rounded-[8px] text-black bg-white lg:hidden flex items-center justify-center mt-16 border-solid border border-black hover:bg-inherit"
+                className="px-12 py-[17px] rounded-[8px] text-custom-black bg-white lg:hidden flex items-center justify-center mt-16 border-solid border border-custom-black hover:bg-inherit shadow-none"
                 asChild
               >
                 <Link href="/contact">Get in touch</Link>
