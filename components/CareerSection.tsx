@@ -1,17 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import InfoSection from './InfoSection'
 import { Button } from './ui/button'
 import {
     Card,
     CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
   } from "@/components/ui/card"
 
 const CareerSection = () => {
+    const careerBtnName = "insights"
   return (
     <>
     <div className="max-w-screen-xxl  pt-[157px] pb-[232px]  lg:py-20  lg:px-20 px-6 py-5 w-full mx-auto">
@@ -42,7 +40,9 @@ const CareerSection = () => {
            
         </Card>
 
-        <div className="flex flex-col items-center pt-[197px] space-y-[60px]">
+        <InfoSection btnName={careerBtnName}/>
+
+        {/* <div className="flex flex-col items-center pt-[197px] space-y-[60px]">
             <div className="flex flex-col items-center ">
                 <Button className=" shadow-none border-solid bg-transparent border-black border-2  text-black hover:bg-transparent px-10 py-[12.5px] w-[127px] h-[44px] mb-5">Insights</Button>
                 <h1 className="font-bold text-2xl lg:text-4xl text-custom-header pt-5 text-center">The world is constantly evolving and so are we</h1>
@@ -69,32 +69,13 @@ const CareerSection = () => {
                 ))}
             </div>
             <Button className="bg-custom-black hover:bg-custom-black text-white shadow-none mt-[60px] py-[14px] px-16 text-base">View all</Button>
-        </div>
+        </div> */}
     </div>
     </>
     
   )
 }
 
-const cardContent = [
-    {
-        imgSrc: "/image1.svg",
-        date: "Date",
-        title: "The world is constantly evolving and so are we",
-        description: "Find out what we've been up to"
-    },
-    {
-        imgSrc: "/image2.svg",
-        date: "Date",
-        title: "The world is constantly evolving and so are we",
-        description: "Find out what we've been up to"
-    },
-    {
-        imgSrc: "/image3.svg",
-        date: "Date",
-        title: "The world is constantly evolving and so are we",
-        description: "Find out what we've been up to"
-    },
-]
+
 
 export default CareerSection
