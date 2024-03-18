@@ -1,11 +1,11 @@
-import React from 'react';
-import { Button } from './ui/button';
-import Link from 'next/link';
-import CardIcon from './CardIcon';
+import React from "react";
+import { Button } from "./ui/button";
+import Link from "next/link";
+import CardIcon from "./CardIcon";
 
 const MissingPiece = () => {
   return (
-    <div className="max-w-screen-xxl lg:px-[90px] px-6   bg-black m-0 pb-40">
+    <div className="max-w-screen-xxl w-full mx-auto lg:px-[90px] px-6   bg-black m-0 pb-40">
       <p className="text-center text-white lg:text-[56px] text-[30px] py-36 font-bold">
         You&#39;re the missing piece of our team!
         <br />
@@ -16,7 +16,7 @@ const MissingPiece = () => {
 
       <div className="bg-white py-10 text-black p-10 border-2 border-black rounded-2xl mt-40">
         <p className="lg:text-[48px] text-[30px] font-bold text-[#333333]">
-          {' '}
+          {" "}
           Not Seeing a position that&#39;s right for you?
         </p>
         <p className="font-normal text-[#4F4F4F] text-[18px] my-8 ">

@@ -1,10 +1,10 @@
-import React from 'react';
-import GetToKnowData from '@/data/GetToKnowData';
-import Image from 'next/image';
+import React from "react";
+import GetToKnowData from "@/data/GetToKnowData";
+import Image from "next/image";
 
 const GetToKnow = () => {
   return (
-    <div className="max-w-screen-xxl lg:px-[90px] px-6 my-40">
+    <div className="max-w-screen-xxl w-full mx-auto lg:px-[90px] px-6 my-40">
       <div className="font-bold lg:text-[48px] text-[30px] text-[#011B33] text-center">
         Get to know us a little better
       </div>

@@ -1,10 +1,10 @@
-import React from 'react';
-import Image from 'next/image';
-import CareerComponentData from '@/data/CareerData';
+import React from "react";
+import Image from "next/image";
+import CareerComponentData from "@/data/CareerData";
 
 const CareerComponent = () => {
   return (
-    <div className="max-w-screen-xxl mt-10">
+    <div className="max-w-screen-xxl w-full mx-auto mt-10">
       <div className="lg:px-[90px] px-6">
         <div className="text-center">
           <div className="font-black lg:text-[56px] my-5 text-[30px]">
@@ -25,13 +25,15 @@ const CareerComponent = () => {
           <div className="w-full">
             <Image
               className="w-full h-auto"
-              src={'/career/Image1.png'}
+              src={"/career/Image1.png"}
               alt="Image"
               width={700}
               height={700}
               layout="responsive"
             />
-            <div className="text-center font-medium text-[18px]">Photo of some QMSL team members</div>
+            <div className="text-center font-medium text-[18px]">
+              Photo of some QMSL team members
+            </div>
           </div>
         </div>
       </div>
@@ -41,7 +43,7 @@ const CareerComponent = () => {
           <div
             key={index}
             className={`w-full flex items-center flex-col lg:flex-row lg:justify-between gap-4 lg:gap-10 py-30 lg:px-[90px] px-6 ${
-              index % 2 === 0 ? '' : 'lg:flex-row-reverse bg-[#F5F5F5]'
+              index % 2 === 0 ? "" : "lg:flex-row-reverse bg-[#F5F5F5]"
             }`}
           >
             <div className="w-full lg:w-1/2">
