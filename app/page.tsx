@@ -8,15 +8,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="">
-      <Banner />
-
-      <HomePage />
-
-      {/* <ServiceCard />
-
-      <HumansSection /> */}
-
-      {/* <CareerSection /> */}
       <div className="w-full lg:h-screen h-[60vh] relative bg-black">
         <video
           className="absolute object-cover w-full h-full"
@@ -39,6 +30,15 @@ export default function Home() {
           />
         </video>
       </div>
+      {/* <Banner /> */}
+
+      <HomePage />
+
+      {/* <ServiceCard />
+
+      <HumansSection /> */}
+
+      {/* <CareerSection /> */}
     </div>
   );
 }
