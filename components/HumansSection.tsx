@@ -7,14 +7,14 @@ const HumansSection = () => {
   return (
     <div className="w-full bg-custom-lightergray  max-w-screen-xxl lg:py-20 lg:px-20 px-6 py-5 mx-auto">
       <div className="flex flex-col justify-center items-center pt-[160px] space-y-[88px] pb-[200px] ">
-        <div className="text-center w-[855px] flex flex-col space-y-6 items-center">
+        <div className="text-center w-full justify-center flex flex-col space-y-6 items-center lg:px-[292.5px]">
           <Button className="border-solid  bg-white border-custom-black border text-custom-black hover:bg-transparent px-10 py-[12.5px] w-[113px] h-[44px] shadow-none text-sm">
             Team
           </Button>
           <h1 className="text-4xl font-bold tracking-tight lg:text-[57px] text-custom-header">
             Humans of QMSL
           </h1>
-          <p className="font-normal text-lg ">
+          <p className="font-normal text-base lg:text-lg text-center">
             We are a dynamic team with a robust knowledge that keeps pushing the
             creative envelope. Our team of strategists, creatives, and
             innovators is made up of experts with a unified passion for
