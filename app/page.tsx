@@ -1,3 +1,8 @@
+import Banner from "@/components/Banner";
+import ServiceCard from "@/components/ServiceCard";
+import HumansSection from "@/components/HumansSection";
+import CareerSection from "@/components/CareerSection";
+import HomePage from "@/components/HomePage";
 import Image from "next/image";
 
 export default function Home() {
@@ -25,6 +30,15 @@ export default function Home() {
           />
         </video>
       </div>
+      {/* <Banner /> */}
+
+      <HomePage />
+
+      {/* <ServiceCard />
+
+      <HumansSection /> */}
+
+      {/* <CareerSection /> */}
     </div>
   );
 }
