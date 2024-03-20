@@ -5,7 +5,8 @@ import TaglineData from '@/data/TaglineData';
 const TaglineComponent = () => {
   return (
     <div className="max-w-screen-xxl w-full mx-auto lg:px-[90px] px-6 mt-10 bg-[#f5f5f5] py-10 lg:py-20">
-      <p className="font-bold my-5 lg:text-[48px] text-[30px] lg:pt-36 pt-22 pb-14 text-center">
+      <p className="font-medium text-[16px] text-center lg:mt-28 ">Tagline</p>
+      <p className="font-bold my-4 lg:my-0 lg:text-[48px] text-[34px] pt-22 lg:pt-7 pb-14 text-center">
         You will be a Great Fit if you
       </p>
 
@@ -24,7 +25,7 @@ const TaglineComponent = () => {
             <p className="font-bold text-left mt-3 mb-5 lg:text-[24px] text-[20px]">
               {service.title}
             </p>
-            <div className="text-[16px] font-normal">{service.description}</div>
+            <div className="text-[14px] font-normal">{service.description}</div>
           </div>
         ))}
       </div>
