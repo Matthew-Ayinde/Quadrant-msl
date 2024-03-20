@@ -3,19 +3,19 @@ const PositionData = [
     position: 'This is the job title',
     location: 'Lagos',
     contractType: '1 year',
-    image: '/blackArrow.png'
+    image: '/whiteArrow.svg'
   },
   {
     position: 'This is the job title',
     location: 'Lagos',
     contractType: '1 year',
-    image: '/blackArrow.png'
+    image: '/whiteArrow.svg'
   },
   {
     position: 'This is the job title',
     location: 'Lagos',
     contractType: '1 year',
-    image: '/blackArrow.png'
+    image: '/whiteArrow.svg'
   }
 ];
 

@@ -62,7 +62,8 @@ const config = {
         "custom-lightergray": "#F5F5F5",
         "custom-header": "#011B33",
         "custom-paragraph": "#828282",
-        "custom-borderBottom": "#BDBDBD"
+        "custom-borderBottom": "#BDBDBD",
+        "custom-deepgray": "#333333"
       },
       borderRadius: {
         lg: "var(--radius)",
