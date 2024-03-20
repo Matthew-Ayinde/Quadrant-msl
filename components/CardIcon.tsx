@@ -8,7 +8,7 @@ import { useState } from 'react';
 const CardIcon = () => {
   const [selectedDiv, setSelectedDiv] = useState<number | null>(null);
 
-  const handleClick = (idx: number) => {
+  const handleSelect = (idx: number) => {
     setSelectedDiv(idx);
   };
 
@@ -18,9 +18,9 @@ const CardIcon = () => {
         <div
           key={idx}
           className={
-            "flex flex-col lg:flex-row hover:bg-white bg-custom-deepgray text-white hover:text-custom-deepgray rounded-xl lg:pl-8 pl-4 pr-14 py-8 ${selectedDiv === idx ? 'bg-red-500' : 'bg-white'}"
+            `flex flex-col lg:flex-row hover:bg-white bg-custom-deepgray text-white hover:text-custom-deepgray rounded-xl lg:pl-8 pl-4 pr-14 py-8 ${selectedDiv === idx ? 'bg-white text-custom-deepgray' : ''}`
           }
-          onClick={() => handleClick(idx)}
+          onClick={() => handleSelect(idx)}
         >
           <div className="lg:w-1/2 lg:m-0 mb-4">
             <div className="flex flex-col">
