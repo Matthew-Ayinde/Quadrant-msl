@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-black">
-      <div className="bg-black text-custom-white flex items-center justify-between max-w-screen-xxl lg:px-20 px-6 w-full mx-auto border-b">
+    <div className="bg-black max-w-screen-xxl mx-auto">
+      <div className="bg-black text-custom-white flex items-center justify-between  lg:px-20 px-6 w-full  border-b">
         <div className="mx-auto my-10 w-full">
           <div className="flex flex-col lg:flex-row lg:mb-32 mb-20 lg:mt-14 mt-10 gap-y-[60px]">
             <div className="w-full flex-1">

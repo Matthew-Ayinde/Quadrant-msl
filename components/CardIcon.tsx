@@ -1,35 +1,65 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import PositionData from '@/data/PositionData';
+import { useState } from 'react';
 
 const CardIcon = () => {
+  const [selectedDiv, setSelectedDiv] = useState<number | null>(null);
+
+  const handleSelect = (idx: number) => {
+    setSelectedDiv(idx);
+  };
+
   return (
-    <div>
-      {PositionData.map((service, index) => (
+    <div className="flex flex-col gap-10">
+      {PositionData.map((data, idx) => (
         <div
-          key={index}
-          className="w-full bg-white rounded-xl overflow-hidden p-[15px] mb-3"
+          key={idx}
+          className={
+            `flex flex-col lg:flex-row hover:bg-white bg-custom-deepgray text-white hover:text-custom-deepgray rounded-xl lg:pl-8 pl-4 pr-14 py-8 ${selectedDiv === idx ? 'bg-white text-custom-deepgray' : ''}`
+          }
+          onClick={() => handleSelect(idx)}
         >
-          <div className="w-full flex flex-col lg:flex-row justify-between px-10 py-2 ">
-            <div className="w-1/2">
-              <p className="text-sm text-gray-500 mb-5">Position</p>
-              <p className="mb-3">{service.position}</p>
+          <div className="lg:w-1/2 lg:m-0 mb-4">
+            <div className="flex flex-col">
+              <div className="font-normal text-16 lg:mb-6 mb-2">
+                Position
+              </div>
+              <div className="font-medium">{data.position}</div>
             </div>
-            <div className="w-1/2 flex flex-col lg:flex-row lg:items-center items-start justify-between">
-              <div className="">
-                <p className="text-sm text-gray-500 mb-5">Location</p>
-                <p className="mb-3">{service.location}</p>
+          </div>
+          <div className="lg:w-1/2">
+            <div className="flex flex-col lg:flex-row">
+              <div className="lg:w-1/2 lg:m-0 mb-4">
+                <div className="flex flex-col lg:flex-row justify-between">
+                  <div>
+                    <div className="flex flex-col lg:m-0 mb-4">
+                      <div className="font-normal text-16 lg:mb-6 mb-2">
+                        Location
+                      </div>
+                      <div className="font-medium text-xl ">{data.location}</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex flex-col">
+                      <div className="font-normal text-16 lg:mb-6 mb-2">
+                        Contract Type
+                      </div>
+                      <div className="font-medium text-xl lg:m-0 mb-4">
+                        {data.contractType}
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="">
-                <p className="text-sm text-gray-500 mb-5">Contract Type</p>
-                <p className="mb-3">{service.contractType}</p>
-              </div>
-              <div className=" text-black mb-5">
+              <div className="lg:w-1/2 flex lg:justify-end justify-start">
                 <Image
-                  src={service.image}
-                  width={40}
+                  src={data.image}
+                  width={32}
                   alt="arrow image"
-                  height={40}
+                  height={32}
                 />
               </div>
             </div>
@@ -41,3 +71,12 @@ const CardIcon = () => {
 };
 
 export default CardIcon;
+
+
+
+
+
+
+
+
+
